@@ -17,6 +17,17 @@ h2{
 img{
 	size: 100%
 }
+.b-lazy {
+        -webkit-transition: opacity 1s ease-in-out;
+           -moz-transition: opacity 1s ease-in-out;
+             -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+                 max-width: 100%;
+                   opacity: 0;
+}
+    .b-lazy.b-loaded {
+         opacity: 1;
+}
 .lema{
 	display: inline-block;
 }
@@ -73,17 +84,6 @@ img{
 	width: 90%;	
 }
 
-.b-lazy {
-        -webkit-transition: opacity 500ms ease-in-out;
-           -moz-transition: opacity 500ms ease-in-out;
-             -o-transition: opacity 500ms ease-in-out;
-                transition: opacity 500ms ease-in-out;
-                 max-width: 100%;
-                   opacity: 0;
-    }
-.b-lazy.b-loaded {
-                   opacity: 1;
-  }
 
 @media screen and (max-width: 800px) {
 	h1{
